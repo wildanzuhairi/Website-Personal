@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+</head>
+<style>
+    .banner {
+      height: 80vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/bg1.jpg');
+      background-size: cover;
+    }
+  
+    .banner-content {
+      height: 100%;
+      color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    
+
+    .img-width {
+        height: 140px;
+        weight: 80px;
+    }
+
+    .caption-konten {
+        color: white;
+    }
+  
+
+  </style>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <!-- sticky-top membuat tampilan menu tidak hilang ketika di scroll dan tidak menimpa kalimat awal
+        Lebih jelasnya bisa diliat bagian placement menu navbar dari dokumentasi boostrap -->
+        <!-- ada banyak tipe, bisa diliat di utilities bootstrap  -->
+        <!-- jika layar monitor ukuran md maka akan tampil semua tombol  -->
+        <div class="container-fluid">
+        <!-- mengenai jenis container bisa diliat di web container bootstrap  -->
+          <a class="navbar-brand" href="#">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.tXKGs73UYjBEZSclUWLSMAHaHa&pid=Api&P=0&h=180" class="rounded" width="50px">  
+            Profile Pribadi
+          </a>
+        <!-- bisa memakai span jika hanya teks tanpa link ataupun mau jadi gambar dengan make img -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Kelas collapse berfungsi untuk menyembunyikan menu  -->
+            <!-- data-bs-target sinkron dengan id=navbarsupportedcontent untuk menampilkan ketika diklik  -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- yang bikin ada jarak adalah me-auto, jadi me singkatan dari margin dan end  -->
+              <!-- jika mau mulai dari kiri maka menggunakan ms-auto, ms singkatan dari margin dan start  -->
+              <!-- Lebih jelasnya bisa diliat di boostrap bagian spacing di menu utilities -->
+              <li class="nav-item mx-3">
+                <!-- mx-3 berarti memberi jarak antara kanan dan kiri sebesar 3px -->
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <!-- untuk menambahkan menu kita bisa menggunakan nav-item  -->
+              <!-- biasanya nav-link active adalah menu yang membedakan dengan menu lainya  -->
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="project.html">Project Saya</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="kegiatan.html">Kegiatan</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-9">
+            <h3 class="text-center mb-4">Project Saya</h3>
+            <div class="row">
+              <div class="card col-md-12">
+                <img src="Skripsi.png" class="card-img-top" alt="...">
+                <h5 class="card-title text-center fw-bold">Projek Skripsi dengan judul "Sistem Informasi Alumni Sekolah"</h5>
+                <div class="card mt-2">
+                    <div class="card-body mt-2">
+                      <p style="text-align: justify;">Di SMAN 1 Anjatan, yang berlokasi di Jalan Jenderal Ahmad Yani Km. 8, Kecamatan Anjatan, Kabupaten Indramayu, ditemukan tantangan dalam pengelolaan data alumni. Meskipun Google Form telah membantu dalam pengumpulan data, platform ini belum sepenuhnya optimal untuk pengelolaan data dalam skala besar dan jangka panjang. Data yang terkumpul masih harus dipindahkan dan diolah secara manual menggunakan Excel, yang berpotensi menyebabkan duplikasi, ketidakakuratan, serta membutuhkan waktu yang cukup lama. Selain itu, salah satu kendala utama adalah dalam pelacakan alumni setelah lulus, khususnya untuk mengetahui perkembangan karier mereka, seperti tempat  
+                      kerja atau pendidikan lanjutan setelah kuliah. Bimbingan dan Konseling berkomitmen untuk terus meningkatkan pengelolaan data alumni agar optimal. Misalnya, proses pengolahan data alumni yang saat ini membutuhkan waktu hingga beberapa hari dapat dipangkas menjadi beberapa jam dengan sistem yang lebih otomatis. Selain itu, Excel tidak memadai untuk pembaruan data secara real-time dan sulit diakses oleh banyak pihak dalam satu waktu, sehingga menghambat koordinasi antar tim. 
+                      Oleh karena itu, diperlukan sistem informasi alumni yang terintegrasi untuk meningkatkan koordinasi antar tim, mempercepat pengumpulan data, dan mempermudah analisis serta penyusunan laporan. Sistem ini juga dapat membantu memastikan dokumentasi tersimpan dengan rapi dan mudah diakses oleh semua pihak yang berkepentingan. Dengan solusi ini, pelaksanaan  Tracer Study di SMAN 1 Anjatan dapat berjalan lebih efisien, terorganisir, dan memberikan hasil yang lebih akurat serta bermanfaat bagi sekolah. Dengan adanya sistem informasi alumni yang berbasis teknologi, diharapkan dapat tercipta lingkungan yang lebih cepat dalam mengelola data alumni. Sistem ini tidak hanya membantu dalam hal administratif, tetapi juga meningkatkan keterlibatan alumni dalam berbagai kegiatan sekolah dan mampu memberikan informasi mengenai lowongan pekerjaan yang tersedia serta memberikan manfaat jangka panjang bagi perkembangan institusi pendidikan. Selain itu, sistem ini juga mendukung proses akreditasi sekolah dengan menyediakan data dan penilaian alumni yang dapat digunakan sebagai bukti keberhasilan institusi dalam mendidik dan mengembangkan siswa. <br>
+                      </p> 
+                      <p>Adapun untuk SRS nya antara lain :</p>
+                      <ol class="text-right fw-bold">
+                        <li>Sistem memiliki fasilitas mengelola register</li>
+                        <li>Sistem memiliki fasilitas melakukan login</li>
+                        <li>Sistem memiliki fasilitas memgelola biodata alumni</li>
+                        <li>Sistem memiliki fasilitas mengelola laporan </li>
+                        <li>Sistem memiliki fasilitas mengelola kepuasan alumni </li>
+                        <li>Sistem memiliki fasilitas mengelola data pendidikan lanjutan  </li>
+                        <li>Sistem memiliki fasilitas mengelola user.  </li>
+                        <li>Sistem memiliki fasilitas untuk mengelola event.  </li>
+                        <li>Sistem memiliki fasilitas untuk mengelola lowongan pekerjaan  </li>
+                        <li>Sistem memiliki fasilitas untuk mengelola Tracer Study  </li>
+                      </ol>
+                      
+                    </div>
+                  </div>
+              </div>
+            </div>
+         
+            
+            </div>
+
+        <div style="text-decoration: none;" class="col-md-3 bg-dark mt-4">
+            <h2 class="fw-bold text-center text-white p-3">Artikel</h2>
+            <a href="https://www.kompas.com/edu/read/2023/02/13/193100871/intip-10-pekerjaan-paling-dibutuhkan-di-tahun-2025#google_vignette">
+            <img class="img-width" src="https://asset.kompas.com/crops/ptUqf3nSldU-qO1p4wl4xB5DqlE=/32x19:575x381/1200x800/data/photo/2022/10/28/635bfc6ac3f0e.jpg" alt="">
+            <p class="caption-konten mt-2">
+              Intip 10 Pekerjaan Paling Dibutuhkan di Tahun 2025 
+            </p></a><br>
+            <a href="https://www.liputan6.com/hot/read/5879997/patrick-kluivert-kunjungi-latihan-timnas-u-20-berbincang-dengan-indra-sjafri-hingga-bersalaman-dengan-jens-raven">
+            <img class="img-width" src="https://cdn1-production-images-kly.akamaized.net/8h_LftgWYnk3vwvWL3mqvq8uBVY=/0x257:1179x921/640x360/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5092955/original/029414000_1736825609-WhatsApp_Image_2025-01-14_at_10.32.18.jpeg" alt="">
+            <p class="caption-konten mt-2">
+                Patrick Kluivert Kunjungi Latihan Timnas U-20, Berbincang dengan Indra Sjafri hingga Bersalaman dengan Jens Raven
+            </p></a><br>
+            <a href="https://www.linkedin.com/advice/0/what-do-you-your-executive-team-lacks-skills-dccbf">
+            <img class="img-width" src="https://as1.ftcdn.net/v2/jpg/02/43/26/70/1000_F_243267097_qmEVa6k8z94AbEMzj4UctCQnA6bwlLjS.jpg" alt="">
+            <p class="caption-konten mt-2">
+              The 5 Most In-Demand Skills
+            </p></a><br>
+            <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">
+            <img class="img-width" src="https://assets.weforum.org/report/cover_image/responsive_thumbnail_webp_AL_Mk1INpfGqFsEusljaTdMFVY07v40xVFBxeFcY4cI.webp" alt="">
+            <p class="caption-konten mt-2">
+              The Future of Jobs Report 2025
+            </p></a><br>
+            
+        </div>
+    </div>
+
+    <div class="row mt-2 bg-dark mt-3">
+        <h5 class="text-center fw-bold text-white">Copyright @wildanzuhairi</h5>
+    </div>
+
+    
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
